@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#b7ccd6;
+}
+
+/* HEADER */
+
+header{
+  width:100%;
+  height:60px;
+  background:#f4f1f8;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 25px;
+}
+
+.logo{
+  font-family:Georgia, serif;
+  font-size:28px;
+  font-weight:bold;
+  color:#14205c;
+  text-shadow:2px 2px 2px #aaa;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+nav a{
+  text-decoration:none;
+  background:#14205c;
+  color:white;
+
+  padding:10px 17px;
+  border-radius:12px;
+
+  font-size:9px;
+  font-weight:bold;
+  line-height:10px;
+  text-align:center;
+}
+
+.search{
+  font-size:30px;
+  margin-left:5px;
+}
+
+/* HOME */
+
+.hero{
+  width:100%;
+  height:calc(100vh - 60px);
+
+  background-image:url("https://i.imgur.com/wgmBWjz.jpeg");
+  background-size:cover;
+  background-position:center;
+}
+
+/* ABOUT */
+
+.content{
+  text-align:center;
+  padding:30px;
+}
+
+.content h1{
+  font-size:40px;
+}
+
+.underline{
+  width:120px;
+  height:4px;
+  background:#14205c;
+  margin:10px auto 25px;
+}
+
+.content p{
+  font-size:24px;
+  font-weight:bold;
+}
+
+/* GALLERY */
+
+.gallery{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding-top:30px;
+}
+
+.gallery img{
+  width:250px;
+  height:360px;
+  object-fit:cover;
+  border-radius:25px;
+}
+
+.gallery img:nth-child(2){
+  margin-top:70px;
+}
+
+.title{
+  text-align:center;
+  margin-top:25px;
+  font-size:18px;
+  font-weight:bold;
+}
+
+/* CONTACT */
+
+.container{
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+}
+
+.contact-box{
+  width:470px;
+  height:80px;
+
+  background:#14205c;
+  border-radius:25px;
+
+  display:flex;
+  align-items:center;
+
+  padding-left:20px;
+}
+
+.icon{
+  width:58px;
+  height:58px;
+
+  background:black;
+  border-radius:50%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  color:white;
+  font-size:30px;
+
+  margin-right:20px;
+}
+
+.contact-text{
+  color:white;
+  font-size:28px;
+  font-weight:bold;
+}
