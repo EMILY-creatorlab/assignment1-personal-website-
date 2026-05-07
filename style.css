@@ -74,6 +74,7 @@ nav a{
 
 .content h1{
   font-size:40px;
+  color:#14205c;
 }
 
 .underline{
@@ -84,8 +85,17 @@ nav a{
 }
 
 .content p{
-  font-size:24px;
+  font-size:20px;
   font-weight:bold;
+  line-height:1.7;
+
+  max-width:1000px;
+
+  margin:0 auto 30px auto;
+
+  text-align:center;
+
+  color:#14205c;
 }
 
 /* GALLERY */
@@ -112,14 +122,17 @@ nav a{
   margin-top:25px;
   font-size:18px;
   font-weight:bold;
+  color:#14205c;
 }
 
 /* CONTACT */
 .container{
   width:100%;
+
   display:flex;
   flex-direction:column;
   align-items:center;
+
   margin-top:70px;
   gap:40px;
 }
@@ -162,6 +175,19 @@ nav a{
 
 /* RESPONSIVE */
 @media(max-width:768px){
+
+  header{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+  }
+
+  nav{
+    margin-top:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
   .gallery{
     flex-direction:column;
     align-items:center;
@@ -170,6 +196,10 @@ nav a{
   .gallery img{
     width:90%;
     height:auto;
+  }
+
+  .gallery img:nth-child(2){
+    margin-top:0;
   }
 
   .content h1{
@@ -196,15 +226,4 @@ nav a{
     font-size:24px;
   }
 
-  header{
-    flex-direction:column;
-    height:auto;
-    padding:15px;
-  }
-
-  nav{
-    margin-top:10px;
-    flex-wrap:wrap;
-    justify-content:center;
-  }
 }
